@@ -2,6 +2,7 @@ var restify = require('restify');
 var path = require('path');
 var fs = require('fs');
 
+var cache = path.join(__dirname, 'cache');
 var dir = path.join(__dirname, 'public');
 
 var mime = {
@@ -25,19 +26,34 @@ server.get('/echo/:name', function (req, res, next) {
     return next();
 });
 
-server.get('/image/:name', function (req, res, next) {
+server.get('/image/:name/:ext', function (req, res, next) {
 
-    var file = path.join(dir, req.params.name);
-
-    var type = mime[path.extname(file).slice(1)] || 'text/plain';
+    var type = mime[req.params.ext] || 'text/plain';
     res.header('Content-Type', type);
 
-    var readStream = fs.createReadStream(file);
-    readStream.pipe(res);
+    var targetFile = path.join(cache, req.params.name + '.' + req.params.ext),
+        readStream;
 
+    if (fs.existsSync(targetFile)) {
+
+        readStream = fs.createReadStream(targetFile);
+    } else {
+
+        var file = path.join(dir, req.params.name + '.' + req.params.ext);
+        fs.copyFileSync(file, targetFile);
+
+        readStream = fs.createReadStream(file);
+    }
+
+    readStream.pipe(res);
     next();
 });
 
 server.listen(8080, function () {
+
+    if (!fs.existsSync(cache)) {
+        fs.mkdirSync(cache);
+    }
+
     console.log('%s listening at %s', server.name, server.url);
 });
