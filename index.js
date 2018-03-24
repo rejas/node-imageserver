@@ -1,20 +1,25 @@
-var restify = require('restify');
-var path = require('path');
-var fs = require('fs');
+// Packages
+const fs = require('fs'),
+    restify = require('restify'),
+    path = require('path'),
+    info = require('./package.json');
 
-var cache = path.join(__dirname, 'cache');
-var dir = path.join(__dirname, 'public');
+// Directories
+const cache = path.join(__dirname, 'cache'),
+    dir = path.join(__dirname, 'public');
 
-var mime = {
+// Mime types
+const mime = {
     gif: 'image/gif',
     jpg: 'image/jpeg',
     png: 'image/png',
     svg: 'image/svg+xml'
 };
 
+// Server
 const server = restify.createServer({
-    name: 'myapp',
-    version: '1.0.0'
+    name: info.name,
+    version: info.version
 });
 
 server.use(restify.plugins.acceptParser(server.acceptable));
