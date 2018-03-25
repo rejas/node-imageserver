@@ -1,7 +1,10 @@
 // Packages
 const fs = require('fs'),
     restify = require('restify'),
-    path = require('path'),
+    path = require('path');
+
+// Configs
+const config = require('./config.js'),
     info = require('./package.json');
 
 // Directories
@@ -54,11 +57,11 @@ server.get('/image/:name/:ext', function (req, res, next) {
     next();
 });
 
-server.listen(8080, function () {
+server.listen(config.server.port, function () {
 
     if (!fs.existsSync(cache)) {
         fs.mkdirSync(cache);
     }
 
-    console.log('%s listening at %s', server.name, server.url);
+    winston.info('%s listening at %s', server.name, server.url);
 });
