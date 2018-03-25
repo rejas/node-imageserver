@@ -1,7 +1,7 @@
 {
   "name": "node-imageserver",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "a simple imageserver written in node.js",
   "author": "Veeck",
   "license": "GPL-3.0",
   "homepage": "https://github.com/rejas/node-imageserver#readme",

@@ -9,4 +9,4 @@ module.exports = {
         cache: path.join(__dirname, 'cache'),
         upload: path.join(__dirname, 'public')
     }
-}
+};
