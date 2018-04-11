@@ -1087,9 +1087,9 @@ restify-errors@^5.0.0:
   optionalDependencies:
     safe-json-stringify "^1.0.3"
 
-restify@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/restify/-/restify-7.0.0.tgz#fc85e6f2341632d5dcc735f2d0a9895ef60c2950"
+restify@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/restify/-/restify-7.1.1.tgz#e7d3f1d9472eb95edb4cb93fd4c9fb47a616e590"
   dependencies:
     assert-plus "^1.0.0"
     bunyan "^1.8.12"
