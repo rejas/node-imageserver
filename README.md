@@ -17,7 +17,7 @@ see ```config.js```
 ## Usage
 
 ```
-http://<server>:<port>/<imagename>/<extension>
+http://<server>:<port>/image/<imagename>/<extension>
 ```
 
 Supported extensions:
