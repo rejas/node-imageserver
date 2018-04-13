@@ -1,6 +1,6 @@
 {
   "name": "node-imageserver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple imageserver written in node.js",
   "author": "Veeck",
   "license": "GPL-3.0",
@@ -29,7 +29,7 @@
     "node": "8.x || 9.x"
   },
   "scripts": {
-    "chk": "eslint *.js *.js",
+    "check": "eslint *.js *.js",
     "fix": "eslint --fix *.js *.js",
     "start": "node index.js",
     "test": "echo \"Warning: no test specified\" && exit 0"
