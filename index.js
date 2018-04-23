@@ -20,6 +20,16 @@ const routes = [
         path: '/image/:name/:ext',
         method: 'get',
         controller: imageController.getImage.bind(imageController)
+    },
+    {
+        path: '/image/:name/:ext/:width',
+        method: 'get',
+        controller: imageController.getImageByWidth.bind(imageController)
+    },
+    {
+        path: '/image/:name/:ext/:width/:height',
+        method: 'get',
+        controller: imageController.getImageByDimensions.bind(imageController)
     }
 ];
 
