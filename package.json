@@ -2,19 +2,12 @@
   "name": "node-imageserver",
   "version": "0.0.2",
   "description": "a simple imageserver written in node.js",
-  "author": "Veeck",
   "license": "GPL-3.0",
   "homepage": "https://github.com/rejas/node-imageserver#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://rejas@github.com/rejas/node-imageserver.git"
-  },
-  "keywords": [
-    "node",
-    "imageserver"
-  ],
-  "bugs": {
-    "url": "https://github.com/rejas/node-imageserver/issues"
+  "bugs": "https://github.com/rejas/node-imageserver/issues",
+  "author": {
+    "name": "rejas",
+    "url": "https://github.com/rejas"
   },
   "dependencies": {
     "fs-extra": "^5.0.0",
@@ -28,6 +21,14 @@
   },
   "engines": {
     "node": ">=6"
+  },
+  "keywords": [
+    "node",
+    "imageserver"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://rejas@github.com/rejas/node-imageserver.git"
   },
   "scripts": {
     "check": "eslint *.js *.js",
