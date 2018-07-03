@@ -14,10 +14,10 @@
     "glob": "^7.1.2",
     "restify": "^7.1.1",
     "sharp": "^0.20.2",
-    "winston": "^2.4.2"
+    "winston": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.0.1"
   },
   "engines": {
     "node": ">=6"
