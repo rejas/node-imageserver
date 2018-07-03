@@ -1,5 +1,7 @@
 # node-imageserver
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rejas/node-imageserver.svg)](https://greenkeeper.io/)
+
 Simple node-imageserver 
 
 Pull Requests welcome!
