@@ -9,6 +9,11 @@ Pull Requests welcome!
 ## Installation
 
 ```
+npm install node-imageserver
+```
+
+or 
+```
 yarn add node-imageserver
 ```
 
