@@ -1,6 +1,6 @@
 # node-imageserver
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/rejas/node-imageserver.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/node-imageserver.svg)](https://badge.fury.io/js/node-imageserver)
 
 Simple node-imageserver 
 

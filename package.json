@@ -10,17 +10,17 @@
     "url": "https://github.com/rejas"
   },
   "dependencies": {
-    "fs-extra": "^8.0.0",
+    "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
-    "restify": "^8.3.2",
+    "restify": "^8.3.3",
     "sharp": "^0.22.1",
-    "winston": "3.1.0"
+    "winston": "3.2.1"
   },
   "devDependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^6.0.1"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "keywords": [
     "node",
@@ -31,8 +31,8 @@
     "url": "git+https://rejas@github.com/rejas/node-imageserver.git"
   },
   "scripts": {
-    "check": "eslint *.js *.js",
-    "fix": "eslint --fix *.js *.js",
+    "check": "eslint *.js lib/**/*.js",
+    "fix": "eslint --fix *.js lib/**/*.js",
     "start": "node index.js",
     "test": "echo \"Warning: no test specified\" && exit 0"
   }

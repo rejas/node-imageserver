@@ -1,14 +1,26 @@
 const config = require('./config.js');
 const winston = require('winston');
 
+const logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.combine(
+        winston.format.splat(),
+        winston.format.simple()
+    ),
+    transports: [
+        new winston.transports.Console(),
+        //new winston.transports.File({ filename: 'logfile.log' })
+    ]
+});
+
 const Server = require('./lib/server').Server;
-const server = new Server(config, winston);
+const server = new Server(config, logger);
 
 const EchoController = require('./lib/controller/echoController').EchoController;
-const echoController = new EchoController(winston);
+const echoController = new EchoController(logger);
 
 const ImageController = require('./lib/controller/imageController').ImageController;
-const imageController = new ImageController(winston, config);
+const imageController = new ImageController(logger, config);
 
 const routes = [
     {
