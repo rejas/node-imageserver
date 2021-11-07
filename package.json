@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "a simple imageserver written in node.js",
   "license": "GPL-3.0",
+  "type": "module",
   "homepage": "https://github.com/rejas/node-imageserver#readme",
   "bugs": "https://github.com/rejas/node-imageserver/issues",
   "author": {

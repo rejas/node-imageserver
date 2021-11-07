@@ -27,6 +27,12 @@ see ```config.js```
 http://<server>:<port>/image/<imagename>/<extension>/<width>/<height>
 ```
 
+## Example
+
+```
+http://localhost:3000/image/example/jpg/300/200
+```
+
 Supported extensions:
 - jpg
 - png

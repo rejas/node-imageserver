@@ -1,5 +1,8 @@
-const config = require('./config.js');
-const winston = require('winston');
+import winston from 'winston';
+import config from './config.js';
+import {Server} from './lib/server.js';
+import {EchoController} from './lib/controller/echoController.js';
+import {ImageController} from './lib/controller/imageController.js';
 
 const logger = winston.createLogger({
     level: 'info',
@@ -13,13 +16,8 @@ const logger = winston.createLogger({
     ]
 });
 
-const Server = require('./lib/server').Server;
 const server = new Server(config, logger);
-
-const EchoController = require('./lib/controller/echoController').EchoController;
 const echoController = new EchoController(logger);
-
-const ImageController = require('./lib/controller/imageController').ImageController;
 const imageController = new ImageController(logger, config);
 
 const routes = [
