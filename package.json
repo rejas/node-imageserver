@@ -13,7 +13,7 @@
   "dependencies": {
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",
-    "restify": "^8.4.0",
+    "restify": "^11.1.0",
     "sharp": "^0.30.5",
     "winston": "^3.3.3"
   },
