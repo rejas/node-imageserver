@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "fs-extra": "^10.0.0",
-    "glob": "^7.2.0",
+    "glob": "^13.0.6",
     "restify": "^11.1.0",
     "sharp": "^0.32.6",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "eslint": "^8.2.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": ">=8"
